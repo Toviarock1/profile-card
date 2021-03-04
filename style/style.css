@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: hsl(185, 75%, 39%);
+  font-size: 18px;
+  font-family: Kumbh Sans;
+}
+.sec-one {
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -596px;
+  background-position-y: -983px;
+}
+.sec-one .container {
+  padding-top: 100px;
+  width: 30%;
+  margin: auto;
+}
+.sub-container {
+  background-color: white;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 1px solid hsl(227, 10%, 46%);
+  padding-bottom: 25px;
+}
+.sec-one .container img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 5px solid white;
+}
+.bg {
+  height: 142px;
+  background-image: url("../images/bg-pattern-card.svg");
+  border-radius: 15px 15px 1px 1px;
+  width: 100%;
+}
+.username {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.username span {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.sub-container div p {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 0;
+  color: hsl(227, 10%, 46%);
+}
+
+/* sec-two */
+.sec-two {
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-position-x: 419px;
+}
+.sec-two .container {
+  width: 30%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  text-align: center;
+  background: white;
+  border-radius: 0 0 15px 15px;
+}
+.sec-two .container div h2 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 20px;
+}
+.sec-two .container div p {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+/* footer */
+footer{
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .sec-one .container,
+  .sec-two .container {
+    width: 80%;
+  }
+  .sec-one {
+    background-position-x: -229px;
+    background-position-y: -169px;
+  }
+  .sec-two {
+    background-position-x: 210px;
+    background-position-y: 10px;
+  }
+}
